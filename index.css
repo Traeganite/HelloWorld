@@ -6,6 +6,7 @@ text-align: center;
 width: 100%;
 color: rgb(248, 248, 242);
 font-size: 60px;
+text-decoration: underline;
 }
 
 
@@ -16,6 +17,7 @@ margin: 0;
 text-align: center;
 width: 100%;
 font-size: 40px;
+text-decoration: underline;
 }
 
 body {
@@ -23,8 +25,7 @@ background-color: rgb(224, 33, 33);
 }
 
 ul li a {
-display: block; 
-padding: 18px 18px;
+padding: 10px 10px;
 width: 60px;
 background-color: rgb(233, 233, 243);
 font-size: 20px;
@@ -33,4 +34,34 @@ border: black 2px solid;
 
 ul {
 list-style-type: none;
+display: flex;
+text-align: center;
+position: stick;
 }
+
+li {
+Display: inline;
+margin-left: auto;
+margin-right: auto;
+}
+
+p {
+font-size: 20px;
+}
+
+.nav {
+text-align: center;
+position: fixed;
+}
+
+p {
+text-align: center;
+}
+
+.Traegan {
+width: 33%;
+text-align: center;
+margin-right: auto;
+margin-left: auto;
+}
+
