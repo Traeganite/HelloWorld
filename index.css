@@ -5,20 +5,19 @@ text-align: center;
 width: 100%;
 color: black;
 font-size: 60px;
-text-decoration: underline;
 margin: 0;
 position: fixed;
 }
 
 
 h2 {
-font-family: Georgia, serif;
-height: 100%;
-margin: 0;
-text-align: center;
-width: 100%;
-font-size: 40px;
-text-decoration: underline;
+    font-family: Georgia, serif;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    text-decoration: underline;
 }
 
 body {
@@ -65,8 +64,10 @@ position: fixed;
 
 p {
 text-align: center;
+width: 33%;
 }
 
 .margin {
 margin: 150px;
+width: 33%;
 }

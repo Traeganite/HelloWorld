@@ -5,6 +5,10 @@ width: 100%;
 background-color: white;
 border-bottom: 10px solid blue;
 text-align: center;
+clear: both;
+margin: auto;
+text-align: center;
+z-index: 999;
 }
 
 .button {
@@ -19,4 +23,26 @@ text-decoration: none;
 a {
 text-decoration: none;
 color: black;
+
+}
+
+.margin {
+width: 33%;
+text-align: center; 
+display:inline;
+float: none;
+padding-top: 2in;
+}
+
+.left {
+float: left; 
+}
+
+.right {
+float: right;
+}
+
+h1 {
+text-decoration: underline;
+font-size: 25px
 }
