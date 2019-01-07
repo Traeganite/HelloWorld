@@ -1,5 +1,5 @@
 nav {
-position: fixed;
+position: sticky;
 height: 100px;
 width: 100%;
 background-color: white;
@@ -44,4 +44,9 @@ float: right;
 h1 {
 text-decoration: underline;
 font-size: 25px
+}
+
+img{
+width: 33%;
+height: 33%;
 }
