@@ -27,7 +27,6 @@ color: black;
 }
 
 .margin {
-width: 33%;
 text-align: center; 
 display:inline;
 float: none;
@@ -56,6 +55,11 @@ height: 66%;
 padding: 50px;
 }
 
-.contact {
-text-align: center;
+.button:hover .contact {
+margin-right: auto;
+margin-left: auto;
+}
+
+a:hover{
+    background: #000000;
 }
