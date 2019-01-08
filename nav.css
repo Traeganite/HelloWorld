@@ -1,5 +1,4 @@
 nav {
-position: sticky;
 height: 100px;
 width: 100%;
 background-color: white;
@@ -8,7 +7,9 @@ text-align: center;
 clear: both;
 margin: auto;
 text-align: center;
-z-index: 999;
+position: sticky;
+top: 0;
+width: 100%;
 }
 
 .button {
@@ -46,7 +47,11 @@ text-decoration: underline;
 font-size: 25px
 }
 
-img{
+.img{
 width: 33%;
-height: 33%;
+height: 66%;
+}
+
+.about{
+padding: 50px;
 }
