@@ -75,3 +75,28 @@ h2 {
 h3 {
     text-decoration: underline;
 }
+
+.contact {
+margin-bottom: 20px;
+bottom: 0;
+position: fixed;
+width: 100%;
+}
+
+#destiny2 {
+text-align: center;
+text-decoration: underline;
+max-width: 33%;
+float: right;
+}
+
+#babyme {
+text-align: center;
+text-decoration: underline;
+max-width: 33%;
+float: left;
+}
+
+.font{
+font-size: 25px;
+}
