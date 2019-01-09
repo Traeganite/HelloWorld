@@ -7,7 +7,6 @@ text-align: center;
 clear: both;
 margin: auto;
 text-align: center;
-position: sticky;
 top: 0;
 width: 100%;
 }
@@ -43,7 +42,8 @@ float: right;
 
 h1 {
 text-decoration: underline;
-font-size: 25px
+font-size: 25px;
+padding-top: 20px;
 }
 
 .about{
@@ -79,7 +79,7 @@ h3 {
 .contact {
 margin-bottom: 20px;
 bottom: 0;
-position: fixed;
+position: absolute;
 width: 100%;
 }
 
@@ -99,4 +99,8 @@ float: left;
 
 .font{
 font-size: 25px;
+}
+
+.title {
+padding-bottom: 80px;
 }
