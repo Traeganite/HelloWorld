@@ -124,10 +124,9 @@ padding-bottom: 80px;
   }
   
   .dropdown {
-    position: relative;
-    display: block;
-    float: right;
     text-align: top;
+    position: relative;
+    display: inline-block;
   }
   
   .dropdown-content {
@@ -153,7 +152,7 @@ padding-bottom: 80px;
   
   .dropdown-content a:hover {background-color: rgb(95, 220, 236)}
   
-  .show {display:inline;}
+  .show {display:block;}
 
 #top {
 max-width: 20%;
