@@ -10,7 +10,7 @@ function rotate() {
 function start() {
 sjs.open("target",500,400);
 	//Ball Object and Properties
-	var ball = new sjs.Image("Images/spike.jpg");
+	var ball = new sjs.Image("spike.jpg");
 	ball.type = "ball"; 
 	ball.setSize(50,50);
 	ball.center();
@@ -19,22 +19,22 @@ sjs.open("target",500,400);
 	ball.pushRight(3);
 	ball.pushUp(4);
 	//Paddle 1
-	var paddle1 = new sjs.Image("Images/paddle.jpg"); 
+	var paddle1 = new sjs.Image("paddle.jpg"); 
 	paddle1.type = "paddle";
 	paddle1.centerH();
 	paddle1.setSize(100,20)
 	//Paddle 2
-	var paddle2 = new sjs.Image("Images/paddle.jpg"); 
+	var paddle2 = new sjs.Image("paddle.jpg"); 
 	paddle2.type = "paddle";
 	paddle2.centerH().bottom();
 	paddle2.setSize(100,20)
 	//Paddle 3
-	var paddle3 = new sjs.Image("Images/paddle.jpg");
+	var paddle3 = new sjs.Image("paddle.jpg");
 	paddle3.type = "paddle";
 	paddle3.centerV().left();
 	paddle3.setSize(20,100);
 	//Paddle 4
-	var paddle4 = new sjs.Image("Images/paddle.jpg"); 
+	var paddle4 = new sjs.Image("paddle.jpg"); 
 	paddle4.type = "paddle";
 	paddle4.centerV().right();
 	paddle4.setSize(20,100)
@@ -73,7 +73,7 @@ sjs.open("target",500,400);
 });
 	//Score
 	var score = 0;
-	var score_txt = new sjs.Text("Score: 0", 21, "purple");
+	var score_txt = new sjs.Text("Score: 0", 21, "black");
 	sjs.onHit("ball",["top_screen","bottom_screen","left_screen","right_screen"], function(){
 		window.location = "gameover.html"; 
 });
@@ -82,7 +82,7 @@ sjs.open("target",500,400);
 </script>
 </head>
 <body onload="start()">
-<h1> Pong </h1>
-<div id="target" style="margin:auto;background: green"></div>
+<h1 id="Pong" style="text-align: center"> Pong </h1>
+<div id="target" style="margin:auto;background: blue"></div>
 </body>
 </html>

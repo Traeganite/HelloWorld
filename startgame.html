@@ -5,7 +5,7 @@
 <script>
 function start(){
 sjs.open();
-var startgame_text = new sjs.Text("Select how many players",28,"blue"); 
+var startgame_text = new sjs.Text("Select how many players",28,"black"); 
 var startBtn = new sjs.Button("1 player", function(){
 window.location = "pong.html";
 });
@@ -22,7 +22,7 @@ startBtn.centerV().right();
 </script>
 </head>
 <body onload="start()">
-<h1> START GAME </h1>
-<div id="target" style="margin:auto;background:grey;"></div>
+<h1 id="startgame" style="text-align: center"> START GAME </h1>
+<div id="target" style="margin:auto;background:blue;"></div>
 </body>
 </html>

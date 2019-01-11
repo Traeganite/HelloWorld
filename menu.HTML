@@ -6,7 +6,7 @@
 <script>
 function start(){
 sjs.open();
-var menu_text = new sjs.Text("MENU",28,"blue");
+var menu_text = new sjs.Text("MENU",28,"black");
 menu_text.centerH();
 
 var startBtn = new sjs.Button("Start", function(){
@@ -24,15 +24,7 @@ info_text.bottom().centerH();
 </script>
 </head>
 <body onload="start()">
-<nav id="nav" class="nav">
-    <div>
-    <h1>Trae<span style="color: blue">g</span>an Christensen</h1>
-    <div class="button"><a href="#about">About</a></div>
-    <div class="button"><a href="Pong/menu.html" target="_blank">Pong</a></div>
-    <div class="button"><a href="./platform/platform.html" target="_blank">Platform</a></div>
-</div>
-</nav>
-
-<div id="target" style="margin:auto;background:grey;"></div>
+<h1 id="menu" style="text-align: center">Menu</h1>
+<div id="target" style="margin:auto;background:blue;"></div>
 </body>
 </html>

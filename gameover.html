@@ -6,7 +6,7 @@
 <script>
 function start(){
 sjs.open();
-var gameover_text = new sjs.Text("Sorry My Friend, You Lose!",28,"blue"); 
+var gameover_text = new sjs.Text("Sorry My Friend, You Lose!",28,"black"); 
 var restartBtn = new sjs.Button("Restart", function(){
 window.location = "startgame.html";
 });
@@ -15,7 +15,7 @@ restartBtn.center();
 </script>
 </head>
 <body onload="start()">
-<h1> Game Over! </h1>
-<div id="target" style="margin:auto;background:grey;"></div>
+<h1 id="gameover" style="text-align: center"> Game Over! </h1>
+<div id="target" style="margin:auto;background:blue;"></div>
 </body>
 </html>

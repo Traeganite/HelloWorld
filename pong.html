@@ -7,24 +7,24 @@ function start() {
 sjs.open("target",500,400);
 
 	//Ball Object and Properties
-	var ball = new sjs.Image("./Images/spike.jpg");
+	var ball = new sjs.Image("spike.jpg");
 	ball.type = "ball"; 
 	ball.setSize(50,50);
 	ball.center();
-	ball.friction = 0;
+	ball.friction = -.001;
 	ball.bounce(); 
 	ball.pushRight(6);
-	ball.pushUp(8);
+	ball.pushUp(4.5);
 
 	//Paddle 1
-	var paddle1 = new sjs.Image("Images/paddle.jpg"); 
-	paddle1.type = "paddle";
+	var paddle1 = new sjs.Image("paddle.jpg"); 
+	paddle1.type = "paddle1";
 	paddle1.centerH();
 	paddle1.setSize(100,20)
 
 	//Paddle 2
-	var paddle2 = new sjs.Image("Images/paddle.jpg");
-	paddle2.type = "paddle";
+	var paddle2 = new sjs.Image("paddle.jpg");
+	paddle2.type = "paddle2";
 	paddle2.center().bottom();
 	paddle2.setSize(100,20);
 	
@@ -40,22 +40,38 @@ sjs.open("target",500,400);
 
 
 });
-	//Sounds
-	var soundEffect = new Audio('Music/pop.mp3'); 
 
-	sjs.onHit("ball","paddle", function(ball,paddle){
-	score = score + 1;
-	score_txt.setText("Score: "+score);
-	soundEffect.play();
-	sjs.bounceOff(ball,paddle); 
-});
 
-	//Score
-	var score = 0;
-	var score_txt = new sjs.Text("Score: 0", 21, "orange");
+	//Score1
+	var score1 = 0;
+	var score1_txt = new sjs.Text("Score 1: 0", 21, "black");
 	sjs.onHit("ball",["top_screen","bottom_screen"], function(){
 		window.location = "gameover.html"; 
 });
+	//Sounds
+	var soundEffect = new Audio('Music/pop.mp3'); 
+
+	sjs.onHit("ball","paddle1", function(ball,paddle){
+	score1 = score1 + 1;
+	score1_txt.setText("Score1: "+score1);
+	soundEffect.play();
+	sjs.bounceOff(ball,paddle1); 
+});
+
+	//Score2
+	var score2 = 0;
+	var score2_txt = new sjs.Text("Score 2: 0", 21, "black");
+	sjs.onHit("ball",["top_screen","bottom_screen"], function(){
+		window.location = "gameover.html"; 
+});
+
+sjs.onHit("ball","paddle2", function(ball,paddle){
+	score2 = score2 + 1;
+	score2_txt.setText("Score2: "+score2);
+	soundEffect.play();
+	sjs.bounceOff(ball,paddle2); 
+});
+
 	sjs.keyDown(LEFT_KEY, function(){
 	paddle1.pushLeft();
 	paddle2.pushLeft();
@@ -66,8 +82,8 @@ sjs.open("target",500,400);
 </script>
 </head>
 <body onload="start()">
-<h1> Pong </h1>
+<h1 id="Pong" style="text-align: center"> Pong </h1>
 
-<div id="target" style="margin:auto;background:green"></div>
+<div id="target" style="margin:auto;background:blue"></div>
 </body>
 </html>
