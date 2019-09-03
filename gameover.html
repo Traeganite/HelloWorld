@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Game Over </title>
+<title> Player 1 wins! </title>
 <script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
 <script>
 function start(){
 sjs.open();
-var gameover_text = new sjs.Text("Sorry My Friend, You Lose!",28,"black"); 
+var gameover_text = new sjs.Text("Player 2 lost!",28,"black"); 
 var restartBtn = new sjs.Button("Restart", function(){
 window.location = "startgame.html";
 });
@@ -15,7 +15,7 @@ restartBtn.center();
 </script>
 </head>
 <body onload="start()">
-<h1 id="gameover" style="text-align: center"> Game Over! </h1>
+<h1 id="gameover" style="text-align: center"> Player 1 wins! </h1>
 <div id="target" style="margin:auto;background:blue;"></div>
 </body>
 </html>
